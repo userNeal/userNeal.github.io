@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
 
     <title>Momentum</title>
 </head>
 <body>
     <h2 id="clock">00:00:00</h2>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
     <form class="hidden" id="login-form"> 
         <!-- class=hidden:  literally hide the crspnd class -->
         <input required maxlength = "15" type="text" placeholder="What's your name?"/>
@@ -17,7 +22,7 @@
 
     <!-- <a href = "https://nomadcoders.co">Go to Courses</a> -->
     <h1 id="greeting" class="hidden"></h1> <!---->
-    <form id="todo-form">
+    <form class="hidden" id="todo-form">
         <input type="text" placeholder="Write a To Do List and press Enter.." required/>
     </form>
     <ul id="todo-list">
@@ -26,11 +31,10 @@
         <span></span>
         <span></span>
     </div>
-    <div id="weather">
-        <span></span>
-        <span></span>
+
+    <div id="image">
     </div>
-    <script src="js/greetings2.js"></script> 
+    <script src="js/login.js"></script> 
     <script src="js/clock.js"></script> 
     <script src="js/quotes.js"></script> 
     <script src="js/background.js"></script> 
